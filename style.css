@@ -1,0 +1,174 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  background: url(images/bg\ with\ multiple\ betta\,\ large\ white\ betta\ as\ center.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/*QUESTION/SCORE COUNTER vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv*/
+.currentQuestionAndScore {
+  /*border: 1px red solid;*/
+
+  font-size: 22px;
+  font-weight: bold;
+  color: rgb(31, 54, 90);
+  background-color: aliceblue;
+  border-radius: 5px;
+
+  margin-top: 75px;
+  margin-left: 50px;
+  margin-right: 50px;
+  
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly; /*vert centers q# and score in parent*/
+  text-align: center; /*horz center q# and score inside parent*/
+}
+
+.currentQuestion, .currentScore{
+  /*border: 1px green solid;*/
+  display: inline-block; /*display q# and score sidebyside instead of on top ea other*/
+  align-self: center; /*q# and score text are centered horz in parent*/
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+/*QUESTION/SCORE COUNTER ^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+
+/*STARTING AND FINAL SCREEN ONLY vvvvvv*/
+.startBox, .finalBox {
+  /*border: 1px red solid;*/
+  background-color: aliceblue;
+  border-radius: 5px;
+
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 50px;
+  margin-right:50px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+}
+.quizTitle, .finalScore {
+  font-size: 30px;
+  font-weight: bolder;
+  color: rgb(31, 54, 90);
+  padding: 15px;
+}
+.question, .results {
+  font-size: 28px;
+  font-weight: bold;
+  color: rgb(31, 54, 90);
+  padding: 15px;
+}
+/*STARTING AND FINAL SCREEN ONLY ^^^^^^^*/
+
+/*ALL QUESTIONS AND ANSWERS vvvvvvvvvvvvvvvvvvvvvvvvvvvv*/
+
+.questionBox, .responseBox {
+  /*border: 1px red solid;*/
+  background-color: aliceblue;
+  border-radius: 5px;
+
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 50px;
+  margin-right:50px;  
+
+  padding-top:15px;
+  padding-bottom: 15px;
+
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+}
+.questions-answers {
+  font-size: 22px;
+  font-weight: bold;
+  color: rgb(31, 54, 90);
+
+  padding: 15px;
+}
+#answer1, #answer2, #answer3, #answer4, label {
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+/*ALL QUESTIONS AND ANSWERS ^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+
+/*RESPONSES: CORRECT AND WRONG vvvvvvvvvvvv*/
+.correctAnswer, .wrongAnswer { 
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  justify-content: space-evenly;
+}
+
+.responseText {
+  font-size: 28px;
+  font-weight: bolder;
+  color: rgb(31, 54, 90);
+  padding: 15px;
+}
+
+.betta-reaction-img {
+  border-radius: 5px;
+  width: 75%;
+  margin: 15px;
+}
+/*RESPONSE BOXES: CORRECT AND WRONG ^^^^^^^^^^^^^^^*/
+
+/*ALL BUTTONS vvvvvvvvvvvvvvvvvvvvvvvvvv*/
+.startButton, .submitButton, .nextButton, .retakeButton {
+  font-family: 'Nunito', sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+  background-color: rgb(31, 54, 90);
+  color: white;
+
+  border-style: unset;
+  border-radius: 5px;
+
+  cursor: pointer;
+  display: inline-block;
+
+  margin: 15px;
+  padding-left: 45px;
+  padding-right: 45px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+button:hover, button:focus {
+  font-family: 'Nunito', sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+  background-color: rgb(130, 175, 211);
+  color: rgb(31, 54, 90);
+}
+/*ALL BUTTONS ^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+
+@media screen and (min-width: 800px) {
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.currentQuestionAndScore, .startBox, .questionBox, .responseBox, .finalBox {
+  width: 750px;
+}
+}
