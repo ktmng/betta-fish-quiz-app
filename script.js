@@ -208,7 +208,7 @@ function generateWrongAnswer() {
     <section class='wrongAnswer'>
       <span class='responseText'>Sorry, That's Not Right</span>
       <img src="images/betta flared.jpg" alt="A betta fish flaring or expanding its gill plates" class="betta-reaction-img">
-      <span class='actualAnswer'>Correct Answer: ${database[STORE.questionNumber].correctAnswer}</span>
+      <span class='actual'>Correct Answer: ${database[STORE.questionNumber].correctAnswer}</span>
       <button class='nextButton'>Next Question</button>
     </section> 
   </section> `;
