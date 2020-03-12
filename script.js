@@ -308,7 +308,6 @@ function handleRetakeButton() {
 
 //^^^^^^^^^^^^^^^^^^^^^^^^^^^^^     HANDLE EVENTS ABOVE      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-// initialzie app vvvv
 function initApp() {
   renderStartingScreen();
   handleStartButton();
