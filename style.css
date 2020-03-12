@@ -125,6 +125,19 @@ body {
   padding: 15px;
 }
 
+.explanation {
+  font-size: 18px;
+  font-weight: bold;
+  color: rgb(31, 54, 90);
+  padding: 15px;
+}
+.actualAnswer, {
+  font-size: 22px;
+  font-weight: bold;
+  color: rgb(31, 54, 90);
+  padding: 15px;
+}
+
 .betta-reaction-img {
   border-radius: 5px;
   width: 75%;
